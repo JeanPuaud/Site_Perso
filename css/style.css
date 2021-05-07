@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family: 'Iconic';
+    font-family: 'Noto';
     src: url(../font/NotoSansSymbols-Regular.ttf);
     font-style: normal;
 }
@@ -16,6 +16,12 @@ body {
     background-color: #A9D400;
 }
 
+main {
+    margin-top: 70px;
+}
+
+
+/* --------header--------*/
 header {
     position: fixed;
     top: 0;
@@ -27,8 +33,11 @@ header {
     height: 70px;
     font-family: Overpass;
     font-size: 2em;
-    z-index: 2;
+    z-index: 5;
+    background-color: #23221d;
 }
+
+
 
 header img{
     padding: 5px;
@@ -37,46 +46,88 @@ header img{
 header nav{
     margin:auto;
     margin-right:0;
-    
+    position: relative;
 }
-
+.animation-highlight::after {
+    background-color:#A9D400;
+    content: '';
+    width: 1px;
+    height: 86%;
+    position:absolute;
+    z-index: -1;
+    left: 1px;
+    bottom: -30%;
+    transform: translateY(-50%);
+    transition: all 350ms;
+}
+.animation-highlight:hover::after {
+    height: 83%;
+    width: 100%;
+    border-radius: 2px;
+}
 header nav a{
     margin: 10 30;
     padding: 5 10;
-    border-radius: 10px;
+    border-radius: 5px;
+    position: relative;
 }
 
-header a:link,
-header a:visited {
-    color: #A9D400;
-    text-decoration: none;
+
+
+header{
+    border-bottom:solid 1px #A9D400;
 }
 
-header a:hover {
-    color: #23221D;
-    text-decoration: none;
-    background-color: #A9D400;
-}
+
+
+/* --------section et fond--------*/
 
 .section{
     width: 100%;
     height: 600px;
     padding:0;
     margin:0;
+    position: relative;
 }
 
 .fond-gris{
     background-color: #23221D;
 }
 
+.fond-gris a:link,
+.fond-gris a:visited{
+    color:#A9D400;
+    text-decoration: none;
+}
+
+.fond-gris a:hover{
+    color: #23221D;
+}
+
 .fond-vert{
     background-color: #A9D400;
 }
-
-  #projet ~ .transition{
-    transform: rotate(180deg)translateY(-5px);
+.transition {
+    position:relative;
 }
 
+.transition img.moi{
+    position: absolute;
+    right:150px;
+    bottom:-100px;
+    width:250px;
+    z-index: 1;
+}
+
+
+#projet ~ .transition{
+    transform: rotate(180deg)translateY(-5px);
+}
+.fond-vert a:visited,
+.fond-vert a:visited{
+    color:#A9D400;
+    text-decoration: none;
+}
 aside a {
     position: fixed;
     bottom:3%;
@@ -85,4 +136,47 @@ aside a {
 aside a img {
     width:68px;
     height:68px;
+}
+
+/* --------Partie-Profil--------*/
+#Profil section{
+    padding-right: 10%;
+    float: right;
+    width:30%;
+}
+
+#Profil h2 {
+    font-family: Noto;
+    font-size: 4.5em;
+    color:#A9D400;
+    margin-bottom: 0;
+    text-align: end;
+}
+#Profil hr {
+    border-color:#A9D400;
+    border-width: 2;
+    width: 100%;
+}
+
+
+#Profil a {
+    text-align: end;
+    font-family: Overpass;
+    font-size: 1em;
+    color:#A9D400;
+    padding:5 5;
+    position: relative;
+    z-index: 2;
+}
+#Profil a:hover {
+   color: #23221D;
+}
+
+#Profil p {
+    text-align: end;
+    font-family: Overpass;
+    font-size: 2em;
+    color:#A9D400;
+    padding:0;
+    position: relative;
 }
