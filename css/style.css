@@ -100,7 +100,8 @@ header{
     text-decoration: none;
 }
 
-.fond-gris a:hover{
+header.fond-gris a:hover,
+#Profil .right a:hover{
     color: #23221D;
 }
 
@@ -139,10 +140,31 @@ aside a img {
 }
 
 /* --------Partie-Profil--------*/
+#Profil{
+    height:80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+
 #Profil section{
     padding-right: 10%;
     float: right;
-    width:30%;
+    width:40%;
+}
+.right{
+    float:right;
+}
+
+.left a{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content:space-around;
+    font-family: Overpass;
+    font-size: 2em;
 }
 
 #Profil h2 {
@@ -159,7 +181,7 @@ aside a img {
 }
 
 
-#Profil a {
+.right a {
     text-align: end;
     font-family: Overpass;
     font-size: 1em;
@@ -168,15 +190,21 @@ aside a img {
     position: relative;
     z-index: 2;
 }
-#Profil a:hover {
+.right a:hover {
    color: #23221D;
 }
 
-#Profil p {
+#Profil .right p {
     text-align: end;
     font-family: Overpass;
     font-size: 2em;
     color:#A9D400;
     padding:0;
     position: relative;
+}
+
+
+
+#Projet{
+    
 }
