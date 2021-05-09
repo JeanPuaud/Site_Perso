@@ -20,6 +20,9 @@ main {
     margin-top: 70px;
 }
 
+h2{
+    margin:0;
+}
 
 /* --------header--------*/
 header {
@@ -141,7 +144,7 @@ aside a img {
 
 /* --------Partie-Profil--------*/
 #Profil{
-    height:80vh;
+    height:90vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -204,7 +207,41 @@ aside a img {
 }
 
 
-
+/* --------Partie-Projet--------*/
 #Projet{
+    height:90vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;<
+}
+#Projet h2{
+    width: 70%;
+    margin:auto;
+    font-family: Noto;
+    color: #23221d;
+    font-size: 3.5em;
+}
+
+#Projet section{
+    border-radius: 20px;
+    background-color: #23221d;
+    width:70%;
     height:70vh;
+    margin:auto;
+    color:white;
+    font-family: Noto;
+    font-size: 1.8em;
+
+}
+
+#Projet section h3{
+    color:#A9D400;
+    font-size: 2.5em;
+    width:inherit;
+    margin: auto 0;
+}
+
+#Projet section>div>a{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
