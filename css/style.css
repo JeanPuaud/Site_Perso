@@ -81,6 +81,9 @@ header{
     border-bottom:solid 1px #A9D400;
 }
 
+a{
+    text-decoration: none;
+}
 
 
 /* --------section et fond--------*/
@@ -127,7 +130,7 @@ header.fond-gris a:hover,
 #projet ~ .transition{
     transform: rotate(180deg)translateY(-5px);
 }
-.fond-vert a:visited,
+.fond-vert a:link,
 .fond-vert a:visited{
     color:#A9D400;
     text-decoration: none;
@@ -225,23 +228,68 @@ aside a img {
     border-radius: 20px;
     background-color: #23221d;
     width:70%;
-    height:70vh;
+    height:auto;
     margin:auto;
     color:white;
-    font-family: Noto;
+    font-family: Overpass;
     font-size: 1.8em;
 
 }
 
 #Projet section h3{
     color:#A9D400;
-    font-size: 2.5em;
-    width:inherit;
+    font-size: 2em;
     margin: auto 0;
 }
 
-#Projet section>div>a{
+#Projet section>div{
+    position: relative;
+}
+
+#Projet section>div>article>a{
+    position: relative;
+    margin:auto 0;
+    display:flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-left:auto;
+    
+
+}
+#Projet section>div>article>a>img{
+    padding-right: 5px;
+}
+
+#Projet section>div>article {
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Projet section>div{
+    padding: 15px;
+}
+
+#Projet section>div>div{
     display:flex;
     flex-direction: row;
+    align-items: center;
     flex-wrap: nowrap;
+    align-content: center;
+    width:100%;
+}
+#Projet section>div>div p{
+    width:min-content;
+    min-width: 50%;
+}
+
+#Projet section>div>div>div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Projet section>div>div>div p{
+    width: max-content;
 }
