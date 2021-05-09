@@ -24,6 +24,9 @@ h2{
     margin:0;
 }
 
+p{
+    margin:0;
+}
 /* --------header--------*/
 header {
     position: fixed;
@@ -90,7 +93,7 @@ a{
 
 .section{
     width: 100%;
-    height: 600px;
+    height: fit-content;
     padding:0;
     margin:0;
     position: relative;
@@ -163,14 +166,29 @@ aside a img {
     float:right;
 }
 
+.left div{
+    text-align: start;
+    padding-left: 100px;
+    font-family: Overpass;
+    font-size: 1.5em;
+    color: #A9D400;
+    padding-top: 70px;
+}
+
+
 .left a{
-    margin-top: 70%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content:space-around;
     font-family: Overpass;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    width: fit-content;
+    color:#A9D400
+}
+.left a:hover{
+    text-decoration: underline;
 }
 
 #Profil h2 {
@@ -212,7 +230,7 @@ aside a img {
 
 /* --------Partie-Projet--------*/
 #Projet{
-    height:90vh;
+    height:fit-content;
     padding-top: 10vh;
     padding-bottom: 10vh;<
 }
@@ -221,7 +239,16 @@ aside a img {
     margin:auto;
     font-family: Noto;
     color: #23221d;
-    font-size: 3.5em;
+    font-size: 2.5em;
+}
+main>h2{
+    width: auto;
+    margin:auto;
+    font-family: Overpass;
+    color:#A9D400;
+    font-size: 2.5em;
+    padding-left:10%;
+    padding-top: 50px;
 }
 
 #Projet section{
@@ -292,4 +319,97 @@ aside a img {
 
 #Projet section>div>div>div p{
     width: max-content;
+}
+
+
+
+
+#competences {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:#A9D400;
+    font-family: Overpass;
+    font-size: 1.5em;
+  }
+  
+  .competence {
+    margin-top: 1em 10% 0 10%;
+    padding: 50px;
+  }
+  
+  .competence img {
+    height: 7em;
+    padding-bottom: 20px;
+  }
+
+#liste {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:#A9D400;
+    font-family: Overpass;
+    font-size: 1.5em;
+  }
+  
+  .elm {
+    margin-top: 1em 10% 0 10%;
+    color:#A9D400;
+    padding: 50px;
+  }
+
+  #liste a{
+      color: #A9D400;
+  }
+  #liste a:hover{
+    color:#A9D400;
+    text-decoration: underline;
+}
+figure{
+    margin:0;
+}
+
+.elm figcaption{
+    display:block;
+}
+.elm img {
+    height: 7em;
+    margin-bottom: 20px;
+    background-color: #A9D400;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+footer{
+    padding: 10px;
+}
+
+footer p{
+    text-align: center;
+    font-family: Overpass;
+    font-size: 1.3em;
+    color: #A9D400;
+}
+
+@media (max-width: 900px){
+    header img{
+        display: none;
+    }
+    header{
+        font-size: 1.8em;
+    }
+    header nav a{
+        margin: 5 ;
+    }
+    header nav {
+        align-items: center;
+    }
+
+    #Profil section.left div {
+        padding: 20px;
+    }
 }
