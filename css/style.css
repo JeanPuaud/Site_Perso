@@ -158,13 +158,13 @@ aside a img {
 }
 
 .left a{
-    margin-top: 30%;
+    margin-top: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content:space-around;
     font-family: Overpass;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #Profil h2 {
@@ -206,5 +206,5 @@ aside a img {
 
 
 #Projet{
-    
+    height:70vh;
 }
